@@ -4,21 +4,29 @@ Sound system for CR. Supports text to speech and jingle play based on system com
 # Directory scanning
 In application.properties file the property jingle.path point to the directory with jingles files. This directory will be scanned on application startup.
 
-#API
+# API
 Following endpoints are available:
 * /say - send POST request to schedule text to speach, body of the post will be spoken
 * /play - send POST request to schedule jingle play, accepts filename to play (handles filenames with and without extension)
 * /records lists - send GET request to get list of sound records (include request time, start of execution, end of execution, body of request, and response body)
 
-#Examples
+# Examples
 
+## Text to speach
 Request: POST localhost:8080/say with body hello
+
 Response: Scheduled to say: dataflow stuck
 
+## Play jingle
+
 Request: POST localhost:8080/play with body example.wmv
+
 Response: Scheduled to play jingle: example.wmv
 
+## Browse sound records
+
 Request: GET localhost:8080/records
+
 Response:
 ```
 [
