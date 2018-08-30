@@ -20,6 +20,7 @@ Response: Scheduled to play jingle: example.wmv
 
 Request: GET localhost:8080/records
 Response:
+```
 [
     {
         "requestType": "say",
@@ -31,10 +32,11 @@ Response:
     },
     {
         "requestType": "play",
-        "requestBody": "sad",
+        "requestBody": "example.wmv",
         "called": "2018-08-30T16:14:39.399+0000",
         "executionStarted": "2018-08-30T16:14:39.400+0000",
         "executionFinished": "2018-08-30T16:14:47.875+0000",
-        "response": "Scheduled to play jingle: sad"
+        "response": "Scheduled to play jingle: example.wmv"
     }
 ]
+```
